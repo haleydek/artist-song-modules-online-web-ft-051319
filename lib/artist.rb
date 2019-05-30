@@ -6,8 +6,10 @@ class Artist
 
   @@artists = []
 
+  include Memorable::InstanceMethods
+  
   def initialize
-    @@artists << self
+    super
     @songs = []
   end
 
